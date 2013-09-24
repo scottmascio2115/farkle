@@ -42,3 +42,15 @@ post '/creategame/:id/:player_a/:player_b' do
   redirect to ("/game/#{@game.id}/#{@player_a.id}/#{@player_b.id}")
 end
 
+post '/game' do
+  @winner = Player.find_by_name(params[:winner])
+  puts @winner.name
+  if request.xhr?
+    erb :_results, layout: false
+  else
+  redirect to ('/')
+  end 
+  
+end
+
+
