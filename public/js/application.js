@@ -8,19 +8,36 @@ $(document).ready(function() {
       $box1.addClass('active');
       $box1.prev().removeClass('active');
     }
-    if ($box1.attr('id') == "10") {
-      alert('A is the winner!');
+    var p_1 = $('#player1_strip td:last-child')
+    var name = $('#player1').text();
+    if (p_1.hasClass('active')){
+      $(document).unbind();
+      var stats = {winner: name}
+      $.post('/game', stats, function(response){
+        $('body').append(response);
+      });
     }
   });
+  
   $(document).keyup(function(e) {
     if (e.keyCode == 39) {
       $box2 = $box2.next();
       $box2.addClass('active');
       $box2.prev().removeClass('active');
     }
-    if ($box2.attr('id') == "10") {
-      alert('B is the winner!');
+
+    var p_2 = $('#player2_strip td:last-child')
+    var name = $('#player2').text()
+    if (p_2.hasClass('active')){
+      
+      $(document).unbind();
+      var stats = {winner: name}
+      $.post('/game', stats, function(response){
+        $('body').append(response);
+      });
+    
     }
+    
   });
 
 });
