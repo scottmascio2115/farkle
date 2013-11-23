@@ -24,3 +24,6 @@ group :test do
   gem "capybara"
   gem 'selenium-webdriver'
 end
+
+
+ruby "1.9.3"
