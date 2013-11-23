@@ -1,0 +1,171 @@
+<ul>
+  <div class="leaderboard">
+<li><%= @player.name.capitalize %></li>
+  <li>Total Score: <%= @player.score %></li>
+</div>
+  <div id="welcome">
+    <li> <%= @message.capitalize %> for a score of <%= @roll_score %></li><br>
+    <li><%= @dice_left %> dice not used in this combination</li><br>
+  </div>
+  <div class="container">
+  <li><img src="/<%= @roll1.value %>.png" alt="the roll"><img src="/<%= @roll2.value %>.png" alt="the roll"><img src="/<%= @roll3.value %>.png" alt="the roll"><img src="/<%= @roll4.value %>.png" alt="the roll"><img src="/<%= @roll5.value %>.png" alt="the roll"><li>
+  </div>
+</ul>
+
+<div id="options">
+<form name="myform" action="/submit/playersone/<%= @game.id %>/<%= @player.id %>/<%= @dice_left %>/<%= @roll_score %>" method="POST">
+<input type="radio" name="answer" value="yes">  Save Score & New Roll!<br><br>
+<input type="radio" name="answer" value="no">  Risk it!<br><br>
+<input type="radio" name="answer" value="finish">  End Game & Submit Score<br><br>
+<input id="button" type="submit" value="submit">
+</form>
+</div>
+
+<div id="risk">
+<h3> Risk vs. Reward </h3>
+<h3> Roll your remaining <%= @dice_left %> dice? </h3>
+<% if @dice_left == 1 %>
+<h6><a id="oneer" href="/two"> One Die Combinations</a></h6>
+<% elsif @dice_left == 2 %>
+<h6><a id="twoer" href="/two"> Two Dice Combinations</a></h6>
+<% elsif @dice_left == 3 %>
+<h6><a id="threeer" href="/four"> Three Dice Combinations</a></h6>
+<% elsif @dice_left == 4 %>
+<h6><a id="fourer" href="/four"> Four Dice Combinations</a></h6>
+<% elsif @dice_left == 5 %>
+<h6><a id="fiver" href="/five"> Five Dice Combinations</a></h6>
+<% elsif @dice_left == 6 %>
+<h6><a id="sixer" href="/six"> Six Dice Combinations</a></h6>
+<% else @dice_left == 0 %>
+<h6><a href="/"> Skizzle</a></h6>
+<% end %>
+</div>
+<div id="sixdice">
+  <h3>Six Dice</h3>
+  <ul>
+    <li> Six of a kind: <img src="/2.png" alt="the roll"><img src="/2.png" alt="the roll"><img src="/2.png" alt="the roll"><img src="/2.png" alt="the roll"><img src="/2.png" alt="the roll"><img src="/2.png" alt="the roll"> 12,500 points</li><br>
+    <li> Straight: <img src="/1.png" alt="the roll" ><img src="/2.png" alt="the roll"><img src="/3.png" alt="the roll"><img src="/4.png" alt="the roll"><img src="/5.png" alt="the roll"><img src="/6.png" alt="the roll"> 11,500 points</li><br>
+    <li> Trips Twice: <img src="/1.png" alt="the roll"><img src="/1.png" alt="the roll"><img src="/1.png" alt="the roll"><img src="/6.png" alt="the roll"><img src="/6.png" alt="the roll"><img src="/6.png" alt="the roll"> 10,000 points</li><br>
+    <li> Really really full house: <img src="/6.png" alt="the roll"><img src="/6.png" alt="the roll"><img src="/6.png" alt="the roll"><img src="/6.png" alt="the roll"><img src="/1.png" alt="the roll"><img src="/1.png" alt="the roll"> 7,500 points</li><br>
+    <li> Five of a kind: <img src="/3.png" alt="the roll"><img src="/3.png" alt="the roll"><img src="/3.png" alt="the roll"><img src="/3.png" alt="the roll"><img src="/6.png" alt="the roll"><img src="/2.png" alt="the roll"> 7,000 points</li><br>
+    <li> Four of a kind: <img src="/5.png" alt="the roll"><img src="/5.png" alt="the roll"><img src="/5.png" alt="the roll"><img src="/5.png" alt="the roll"><img src="/1.png" alt="the roll"><img src="/3.png" alt="the roll"> 3,000 points</li><br>
+    <li> 6 high full house: <img src="/6.png" alt="the roll"><img src="/6.png" alt="the roll"><img src="/6.png" alt="the roll"><img src="/2.png" alt="the roll"><img src="/2.png" alt="the roll"><img src="/4.png" alt="the roll"> 1,800 points</li><br>
+    <li> 5 high full house: <img src="/5.png" alt="the roll"><img src="/5.png" alt="the roll"><img src="/5.png" alt="the roll"><img src="/1.png" alt="the roll"><img src="/1.png" alt="the roll"><img src="/3.png" alt="the roll"> 1,700 points</li><br>
+    <li> 4 high full house: <img src="/4.png" alt="the roll"><img src="/4.png" alt="the roll"><img src="/4.png" alt="the roll"><img src="/3.png" alt="the roll"><img src="/3.png" alt="the roll"><img src="/1.png" alt="the roll"> 1,600 points</li><br>
+    <li> 3 high full house: <img src="/3.png" alt="the roll"><img src="/3.png" alt="the roll"><img src="/3.png" alt="the roll"><img src="/6.png" alt="the roll"><img src="/6.png" alt="the roll"><img src="/4.png" alt="the roll"> 1,500 points</li><br>
+    <li> 2 high full house: <img src="/2.png" alt="the roll"><img src="/2.png" alt="the roll"><img src="/2.png" alt="the roll"><img src="/1.png" alt="the roll"><img src="/1.png" alt="the roll"><img src="/6.png" alt="the roll"> 1,450 points</li><br>
+    <li> 1 high full house: <img src="/1.png" alt="the roll"><img src="/1.png" alt="the roll"><img src="/1.png" alt="the roll"><img src="/4.png" alt="the roll"><img src="/4.png" alt="the roll"><img src="/5.png" alt="the roll"> 1,400 points</li><br>
+    <li> Two Pair: <img src="/2.png" alt="the roll"><img src="/2.png" alt="the roll"><img src="/3.png" alt="the roll"><img src="/3.png" alt="the roll"><img src="/5.png" alt="the roll"><img src="/6.png" alt="the roll"> 1,350 points</li><br>
+    <li> Three of a kind sixes: <img src="/6.png" alt="the roll"><img src="/6.png" alt="the roll"><img src="/6.png" alt="the roll"><img src="/3.png" alt="the roll"><img src="/5.png" alt="the roll"><img src="/1.png" alt="the roll"> 300 points</li><br>
+    <li> Three of a kind fives: <img src="/5.png" alt="the roll"><img src="/5.png" alt="the roll"><img src="/5.png" alt="the roll"><img src="/3.png" alt="the roll"><img src="/1.png" alt="the roll"><img src="/6.png" alt="the roll"> 250 points</li><br>
+    <li> Three of a kind fours: <img src="/4.png" alt="the roll"><img src="/4.png" alt="the roll"><img src="/4.png" alt="the roll"><img src="/3.png" alt="the roll"><img src="/1.png" alt="the roll"><img src="/6.png" alt="the roll"> 200 points</li><br>
+    <li> Three of a kind threes: <img src="/3.png" alt="the roll"><img src="/3.png" alt="the roll"><img src="/3.png" alt="the roll"><img src="/6.png" alt="the roll"><img src="/1.png" alt="the roll"><img src="/2.png" alt="the roll"> 175 points</li><br>
+    <li> Three of a kind twos: <img src="/2.png" alt="the roll"><img src="/2.png" alt="the roll"><img src="/2.png" alt="the roll"><img src="/6.png" alt="the roll"><img src="/1.png" alt="the roll"><img src="/5.png" alt="the roll"> 150 points</li><br>
+    <li> Three of a kind ones: <img src="/1.png" alt="the roll"><img src="/1.png" alt="the roll"><img src="/1.png" alt="the roll"><img src="/6.png" alt="the roll"><img src="/4.png" alt="the roll"><img src="/2.png" alt="the roll"> 1000 points</li><br>
+    <li> A one: <img src="/1.png" alt="the roll"><img src="/3.png" alt="the roll"><img src="/6.png" alt="the roll"><img src="/6.png" alt="the roll"><img src="/4.png" alt="the roll"><img src="/5.png" alt="the roll"> 1 points</li><br>
+    <li>No other combinations qualify!</li>
+  </ul>
+
+</div>
+
+<div id="fivedice">
+  <h3>Five Dice</h3>
+  <ul>
+    <li> Five of a kind: <img src="/3.png" alt="the roll"><img src="/3.png" alt="the roll"><img src="/3.png" alt="the roll"><img src="/3.png" alt="the roll"><img src="/3.png" alt="the roll"> 12,500 points</li><br>
+    <li> 6 high full house: <img src="/6.png" alt="the roll"><img src="/6.png" alt="the roll"><img src="/6.png" alt="the roll"><img src="/1.png" alt="the roll"><img src="/1.png" alt="the roll"> 9,000 points</li><br>
+    <li> Four of a kind: <img src="/5.png" alt="the roll"><img src="/5.png" alt="the roll"><img src="/5.png" alt="the roll"><img src="/5.png" alt="the roll"><img src="/1.png" alt="the roll"> 8,500 points</li><br>
+    <li> 5 high full house: <img src="/5.png" alt="the roll"><img src="/5.png" alt="the roll"><img src="/5.png" alt="the roll"><img src="/1.png" alt="the roll"><img src="/1.png" alt="the roll"> 8,500 points</li><br>
+    <li> 4 high full house: <img src="/4.png" alt="the roll"><img src="/4.png" alt="the roll"><img src="/4.png" alt="the roll"><img src="/3.png" alt="the roll"><img src="/3.png" alt="the roll"> 8,000 points</li><br>
+    <li> 3 high full house: <img src="/3.png" alt="the roll"><img src="/3.png" alt="the roll"><img src="/3.png" alt="the roll"><img src="/6.png" alt="the roll"><img src="/6.png" alt="the roll"> 7,500 points</li><br>
+    <li> 2 high full house: <img src="/2.png" alt="the roll"><img src="/2.png" alt="the roll"><img src="/2.png" alt="the roll"><img src="/1.png" alt="the roll"><img src="/1.png" alt="the roll"> 6,500 points</li><br>
+    <li> 1 high full house: <img src="/1.png" alt="the roll"><img src="/1.png" alt="the roll"><img src="/1.png" alt="the roll"><img src="/4.png" alt="the roll"><img src="/4.png" alt="the roll"> 4,500 points</li><br>
+    <li> Two Pair: <img src="/2.png" alt="the roll"><img src="/2.png" alt="the roll"><img src="/3.png" alt="the roll"><img src="/3.png" alt="the roll"><img src="/5.png" alt="the roll"> 3,000 points</li><br>
+    <li> Three of a kind sixes: <img src="/6.png" alt="the roll"><img src="/6.png" alt="the roll"><img src="/6.png" alt="the roll"><img src="/3.png" alt="the roll"><img src="/5.png" alt="the roll"> 1900 points</li><br>
+    <li> Three of a kind fives: <img src="/5.png" alt="the roll"><img src="/5.png" alt="the roll"><img src="/5.png" alt="the roll"><img src="/3.png" alt="the roll"><img src="/1.png" alt="the roll"> 1850 points</li><br>
+    <li> Three of a kind fours: <img src="/4.png" alt="the roll"><img src="/4.png" alt="the roll"><img src="/4.png" alt="the roll"><img src="/3.png" alt="the roll"><img src="/1.png" alt="the roll">1700 points</li><br>
+    <li> Three of a kind threes: <img src="/3.png" alt="the roll"><img src="/3.png" alt="the roll"><img src="/3.png" alt="the roll"><img src="/6.png" alt="the roll"><img src="/1.png" alt="the roll"> 1575 points</li><br>
+    <li> Three of a kind twos: <img src="/2.png" alt="the roll"><img src="/2.png" alt="the roll"><img src="/2.png" alt="the roll"><img src="/6.png" alt="the roll"><img src="/1.png" alt="the roll"> 1450 points</li><br>
+    <li> Three of a kind ones: <img src="/1.png" alt="the roll"><img src="/1.png" alt="the roll"><img src="/1.png" alt="the roll"><img src="/6.png" alt="the roll"><img src="/4.png" alt="the roll">1000 points</li><br>
+    <li> Pair of a sixes: <img src="/6.png" alt="the roll"><img src="/6.png" alt="the roll"><img src="/1.png" alt="the roll"><img src="/3.png" alt="the roll"><img src="/5.png" alt="the roll"> 100 points</li><br>
+    <li> Pair of a fives: <img src="/5.png" alt="the roll"><img src="/5.png" alt="the roll"><img src="/4.png" alt="the roll"><img src="/3.png" alt="the roll"><img src="/1.png" alt="the roll"> 100 points</li><br>
+    <li> Pair of a fours: <img src="/4.png" alt="the roll"><img src="/4.png" alt="the roll"><img src="/2.png" alt="the roll"><img src="/3.png" alt="the roll"><img src="/1.png" alt="the roll">100 points</li><br>
+    <li> Pair of a threes: <img src="/3.png" alt="the roll"><img src="/3.png" alt="the roll"><img src="/4.png" alt="the roll"><img src="/6.png" alt="the roll"><img src="/1.png" alt="the roll"> 100 points</li><br>
+    <li> Pair of a twos: <img src="/2.png" alt="the roll"><img src="/2.png" alt="the roll"><img src="/5.png" alt="the roll"><img src="/6.png" alt="the roll"><img src="/1.png" alt="the roll"> 100 points</li><br>
+    <li> Pair of a ones: <img src="/1.png" alt="the roll"><img src="/1.png" alt="the roll"><img src="/3.png" alt="the roll"><img src="/6.png" alt="the roll"><img src="/4.png" alt="the roll">100 points</li><br>
+
+    <li>No other combinations qualify!</li>
+  </ul>
+</div>
+<div id="fourdice">
+  <h3>Four Dice</h3>
+  <ul>
+    <li> Four of a kind: <img src="/5.png" alt="the roll"><img src="/5.png" alt="the roll"><img src="/5.png" alt="the roll"><img src="/5.png" alt="the roll"> 15,000 points</li><br>
+    <li> Two Pair: <img src="/2.png" alt="the roll"><img src="/2.png" alt="the roll"><img src="/3.png" alt="the roll"><img src="/3.png" alt="the roll"> 10,000 points</li><br>
+    <li> Straight: <img src="/1.png" alt="the roll" ><img src="/2.png" alt="the roll"><img src="/3.png" alt="the roll"><img src="/4.png" alt="the roll"> 9,500 points</li><br>
+    <li> Straight: <img src="/2.png" alt="the roll" ><img src="/3.png" alt="the roll"><img src="/4.png" alt="the roll"><img src="/5.png" alt="the roll"> 9,500 points</li><br>
+    <li> Straight: <img src="/3.png" alt="the roll" ><img src="/4.png" alt="the roll"><img src="/5.png" alt="the roll"><img src="/6.png" alt="the roll"> 9,500 points</li><br>
+    <li> Three of a kind sixes: <img src="/6.png" alt="the roll"><img src="/6.png" alt="the roll"><img src="/6.png" alt="the roll"><img src="/3.png" alt="the roll"> 5000 points</li><br>
+    <li> Three of a kind fives: <img src="/5.png" alt="the roll"><img src="/5.png" alt="the roll"><img src="/5.png" alt="the roll"><img src="/3.png" alt="the roll"> 3750 points</li><br>
+    <li> Three of a kind fours: <img src="/4.png" alt="the roll"><img src="/4.png" alt="the roll"><img src="/4.png" alt="the roll"><img src="/3.png" alt="the roll">2500 points</li><br>
+    <li> Three of a kind threes: <img src="/3.png" alt="the roll"><img src="/3.png" alt="the roll"><img src="/3.png" alt="the roll"><img src="/6.png" alt="the roll"> 2500 points</li><br>
+    <li> Three of a kind twos: <img src="/2.png" alt="the roll"><img src="/2.png" alt="the roll"><img src="/2.png" alt="the roll"><img src="/6.png" alt="the roll"> 2500 points</li><br>
+    <li> Three of a kind ones: <img src="/1.png" alt="the roll"><img src="/1.png" alt="the roll"><img src="/1.png" alt="the roll"><img src="/6.png" alt="the roll">5000 points</li><br>
+    <li> Pair of a sixes: <img src="/6.png" alt="the roll"><img src="/6.png" alt="the roll"><img src="/1.png" alt="the roll"><img src="/3.png" alt="the roll"> 300 points</li><br>
+    <li> Pair of a fives: <img src="/5.png" alt="the roll"><img src="/5.png" alt="the roll"><img src="/4.png" alt="the roll"><img src="/3.png" alt="the roll"> 300 points</li><br>
+    <li> Pair of a fours: <img src="/4.png" alt="the roll"><img src="/4.png" alt="the roll"><img src="/2.png" alt="the roll"><img src="/3.png" alt="the roll"> 300 points</li><br>
+    <li> Pair of a threes: <img src="/3.png" alt="the roll"><img src="/3.png" alt="the roll"><img src="/4.png" alt="the roll"><img src="/6.png" alt="the roll"> 300 points</li><br>
+    <li> Pair of a twos: <img src="/2.png" alt="the roll"><img src="/2.png" alt="the roll"><img src="/5.png" alt="the roll"><img src="/6.png" alt="the roll"> 300 points</li><br>
+    <li> Pair of a ones: <img src="/1.png" alt="the roll"><img src="/1.png" alt="the roll"><img src="/3.png" alt="the roll"><img src="/6.png" alt="the roll"> 300 points</li><br>
+
+    <li>No other combinations qualify!</li>
+  </ul>
+</div>
+
+<div id="threedice">
+  <h3>Three Dice</h3>
+  <ul>
+    <li> Three of a kind ones: <img src="/1.png" alt="the roll"><img src="/1.png" alt="the roll"><img src="/1.png" alt="the roll">8,000 points</li><br>
+    <li> Three of a kind twos: <img src="/2.png" alt="the roll"><img src="/2.png" alt="the roll"><img src="/2.png" alt="the roll"> 7,000 points</li><br>
+    <li> Three of a kind threes: <img src="/3.png" alt="the roll"><img src="/3.png" alt="the roll"><img src="/3.png" alt="the roll"> 6,000 points</li><br>
+    <li> Three of a kind fours: <img src="/4.png" alt="the roll"><img src="/4.png" alt="the roll"><img src="/4.png" alt="the roll">5,000 points</li><br>
+    <li> Three of a kind fives: <img src="/5.png" alt="the roll"><img src="/5.png" alt="the roll"><img src="/5.png" alt="the roll"> 4,000 points</li><br>
+    <li> Three of a kind sixes: <img src="/6.png" alt="the roll"><img src="/6.png" alt="the roll"><img src="/6.png" alt="the roll"> 3,000 points</li><br>
+    <li> Straight: <img src="/1.png" alt="the roll" ><img src="/2.png" alt="the roll"><img src="/3.png" alt="the roll"> 5,000 points</li><br>
+    <li> Straight: <img src="/2.png" alt="the roll" ><img src="/3.png" alt="the roll"><img src="/4.png" alt="the roll"> 5,000 points</li><br>
+    <li> Straight: <img src="/3.png" alt="the roll" ><img src="/4.png" alt="the roll"><img src="/5.png" alt="the roll"> 5,000 points</li><br>
+    <li> Pair of a sixes: <img src="/6.png" alt="the roll"><img src="/6.png" alt="the roll"><img src="/1.png" alt="the roll"> 500 points</li><br>
+    <li> Pair of a fives: <img src="/5.png" alt="the roll"><img src="/5.png" alt="the roll"><img src="/4.png" alt="the roll"> 500 points</li><br>
+    <li> Pair of a fours: <img src="/4.png" alt="the roll"><img src="/4.png" alt="the roll"><img src="/2.png" alt="the roll"> 500 points</li><br>
+    <li> Pair of a threes: <img src="/3.png" alt="the roll"><img src="/3.png" alt="the roll"><img src="/4.png" alt="the roll">500 points</li><br>
+    <li> Pair of a twos: <img src="/2.png" alt="the roll"><img src="/2.png" alt="the roll"><img src="/5.png" alt="the roll">600 points</li><br>
+    <li> Pair of a ones: <img src="/1.png" alt="the roll"><img src="/1.png" alt="the roll"><img src="/3.png" alt="the roll"> 600 points</li><br>
+
+    <li>No other combinations qualify!</li>
+  </ul>
+</div>
+
+<div id="twodice">
+  <h3>Two Dice</h3>
+  <ul>
+    <li> Pair of a ones: <img src="/1.png" alt="the roll"><img src="/1.png" alt="the roll"> 13,500 points</li><br>
+    <li> Pair of a twos: <img src="/2.png" alt="the roll"><img src="/2.png" alt="the roll">12,000 points</li><br>
+    <li> Pair of a threes: <img src="/3.png" alt="the roll"><img src="/3.png" alt="the roll">10,500 points</li><br>
+    <li> Pair of a fours: <img src="/4.png" alt="the roll"><img src="/4.png" alt="the roll"> 9,000 points</li><br>
+    <li> Pair of a fives: <img src="/5.png" alt="the roll"><img src="/5.png" alt="the roll"> 8,000 points</li><br>
+    <li> Pair of a sixes: <img src="/6.png" alt="the roll"><img src="/6.png" alt="the roll"> 7,000 points</li><br>
+
+    <li>No other combinations qualify!</li>
+  </ul>
+</div>
+
+<div id="onedice">
+  <h3>One Dice</h3>
+  <ul>
+    <li> A one: <img src="/1.png" alt="the roll"> 20,000 points</li><br>
+
+    <li>No other combinations qualify!</li>
+  </ul>
+</div>
+
+
+

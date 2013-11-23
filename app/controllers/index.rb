@@ -1,56 +1,37 @@
 get '/' do
-  # Look in app/views/index.erb
+  @games = Game.all
+  @p = []
+  @games.each do |game|
+   game.players.each do |player|
+    @p << player
+    end
+   end
+
+   @high_score = @p.sort_by(&:score).reverse.take(10)
+
   erb :index
 end
 
-get '/results/:id' do
-  @game = Game.find(params[:id])
+get '/odds' do
 
+  erb :odds
+end
 
-  erb :results
+get '/leaderboard' do
+  @games = Game.all
+  @p = []
+  @games.each do |game|
+   game.players.each do |player|
+    @p << player
+    end
+   end
+
+   @high_score = @p.sort_by(&:score).reverse.take(10)
+
+  erb :leader_board
 end
 
 
-get '/game/:id/:player_a/:player_b' do
-  @game = Game.find(params[:id])
-  @player_a = Player.find(params[:player_a])
-  @player_b = Player.find(params[:player_b])
-  erb :game
-end
 
-#+++++++++++++++++++++++++post
-
-
-post '/creategame' do
- 
-  player_1 = params[:player1_name]
-  player_2 = params[:player2_name]
-  @game = Game.create
-  @player_a = Player.create(name: player_1)
-  @player_b = Player.create(name: player_2)
-  @game.players << @player_a
-  @game.players << @player_b
-  redirect to ("/game/#{@game.id}/#{@player_a.id}/#{@player_b.id}")
-end
-
-post '/creategame/:id/:player_a/:player_b' do 
-  @game = Game.create
-  @player_a = Player.find(params[:player_a])
-  @player_b = Player.find(params[:player_b])
-  @game.players << @player_a
-  @game.players << @player_b
-  redirect to ("/game/#{@game.id}/#{@player_a.id}/#{@player_b.id}")
-end
-
-post '/game' do
-  @winner = Player.find_by_name(params[:winner])
-  puts @winner.name
-  if request.xhr?
-    erb :_results, layout: false
-  else
-  redirect to ('/')
-  end 
-  
-end
 
 

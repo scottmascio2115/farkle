@@ -1,0 +1,13 @@
+
+<div id="skizzling">
+<h1><%= @message.upcase %> </h1>
+
+<h1> Plus: 1000 point bonus! </h1>
+
+<h1>You'r total score now is <%= @player.score %></h1>
+
+<h4><a href="/game/playerone/<%= @game.id %>/roll/<%= @player.id %>"> And you get another six dice!! </a></h4>
+</div>
+<div id="skizzlingdice" title="HOT HAND">
+  <h1> <img src="/skizzling.png" height="200" width="200"><br>SKIZZLING DICE!! </h1>
+</div>

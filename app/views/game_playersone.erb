@@ -1,0 +1,20 @@
+<div id= "intro">
+  <h1> SKIZZLE</h1>
+<h4><%= @player_a.name.capitalize %> lets play some Skizzle! </h4>
+</div>
+<div class="container">
+<ul>
+  <li><img src="/<%= @roll1.value %>.png" alt="the roll"><img src="/<%= @roll2.value %>.png" alt="the roll"><img src="/<%= @roll3.value%>.png" alt="the roll"><img src="/<%= @roll4.value %>.png" alt="the roll"><img src="/<%= @roll5.value %>.png" alt="the roll"><img src="/<%= @roll6.value %>.png" alt="the roll"><li>
+    <li><%= @player_a.name.capitalize %> its your roll</li><br>
+  <li>Total Score: <%= @player_a.score %></li><br>
+    <li><form id="button" method="post" action="/game/playersone/<%= @game.id %>/<%= @player_a.id%>/rolls/1/<%=@player_a.name%>">
+    <input id="button" type="submit" value="Roll the Die">
+  </form></li>
+</ul>
+</div>
+
+<div id='footer'>
+<h6><a href="/">Save Scores & End Game </a></h6>
+</div>
+
+

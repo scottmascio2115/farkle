@@ -1,0 +1,10 @@
+<div id='leaderbaord'>
+<ul>
+  <% if @high_score.length >= 1 %>
+  <li> All time Leader Board </li><br>
+  <% @high_score.each do |player| %>
+  <li><%= player.name.capitalize %>: <%= player.score %></li>
+  <% end %>
+  <% end %>
+</ul>
+</div>

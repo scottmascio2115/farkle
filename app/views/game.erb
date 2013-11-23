@@ -1,40 +1,55 @@
-<p><%= @player_a.name.capitalize %>, your key is the left arrow.</p>
-<p><%= @player_b.name.capitalize %>, your key is the right arrow.</p>
-<div class="race">
-  <table class="racer_table">
-    <p id="player1"><%= @player_a.name%></p>
-    <tr data-name="a" id="player1_strip">
-      <td class="active" id="1"></td>
-      <td id="2"></td>
-      <td id="3"></td>
-      <td id="4"></td>
-      <td id="5"></td>
-      <td id="6"></td>
-      <td id="7"></td>
-      <td id="8"></td>
-      <td id="9"></td>
-      <td id="10"></td>
-    </tr>
-    
-    <tr data-name="b" id="player2_strip">
-      <td class="active" id="1"></td>
-      <td id="2"></td>
-      <td id="3"></td>
-      <td id="4"></td>
-      <td id="5"></td>
-      <td id="6"></td>
-      <td id="7"></td>
-      <td id="8"></td>
-      <td id="9"></td>
-      <td id="10"></td>
-
-    </tr>
-  </table>
-    <p id="player2"><%= @player_b.name%></p>
+<div id= "intro">
+  <h1> SKIZZLE</h1>
+<h4> Lets play some Skizzle! </h4>
 </div>
-<div id="reload">
-  <form action="/creategame/<%=@game.id%>/<%=@player_a.id%>/<%=@player_b.id%>" method="POST">
-    <input type="submit" value="Replay!">
-  </form>
+<% if @player_a.score >= @player_b.score %>
+<TABLE border="0">
+<tr>
+<th><strong><u>Name</u></strong></th><th><strong><u>Score</u></strong></th>
+</tr>
+<tr>
+<td><%= @player_a.name.capitalize %></td><td align="center"><%= @player_a.score %> </td>
+</tr>
+<tr>
+<td><%= @player_b.name.capitalize %></td><td align="center"><%= @player_b.score %> </td>
+</tr>
+</TABLE>
+<% end %>
 
+<% if @player_b.score > @player_a.score %>
+<TABLE border="0">
+<tr>
+<th><strong><u>Name</u></strong></th><th><strong><u>Score</u></strong></th>
+</tr>
+<tr>
+<td><%= @player_b.name.capitalize %></td><td align="center"><%= @player_b.score %> </td>
+</tr>
+<tr>
+<td><%= @player_a.name.capitalize %></td><td align="center"><%= @player_a.score %> </td>
+</tr>
+</TABLE>
+<% end %>
+<div class="container">
+<ul>
+    <% if @player_a.active == "true" || @player_a.active == "t" %>
+  <li><img src="/<%= @roll1.value %>.png" alt="the roll"><img src="/<%= @roll2.value %>.png" alt="the roll"><img src="/<%= @roll3.value%>.png" alt="the roll"><img src="/<%= @roll4.value %>.png" alt="the roll"><img src="/<%= @roll5.value %>.png" alt="the roll"><img src="/<%= @roll6.value %>.png" alt="the roll"><li>
+    <li><%= @player_a.name.capitalize %> its your roll</li><br>
+ <li> Total Score: <%= @player_a.score %></li><br>
+    <li><form id="button" method="post" action="/game/playerstwo/<%= @game.id %>/<%= @player_a.id%>/<%=@player_b.id%>/rolls/1/<%=@player_a.name%>">
+    <input id="button" type="submit" value="Roll the Die">
+  </form></li>
+    <% end %>
+    <% if @player_b.active == "t" || @player_b.active == "true" %>
+  <li><img src="/<%= @roll1b.value %>.png" alt="the roll"><img src="/<%= @roll2b.value %>.png" alt="the roll"><img src="/<%= @roll3b.value%>.png" alt="the roll"><img src="/<%= @roll4b.value %>.png" alt="the roll"><img src="/<%= @roll5b.value %>.png" alt="the roll"><img src="/<%= @roll6.value %>.png" alt="the roll"><li>
+    <li><%= @player_b.name.capitalize %> its your roll</li>
+  <li>Your Total Score: <%= @player_b.score %></li>
+    <li><form id="button" method="post" action="/game/playerstwo/<%= @game.id %>/<%= @player_a.id%>/<%=@player_b.id%>/rolls/2/<%=@player_a.name%>">
+    <input id="button" type="submit" value="Roll the Die">
+  </form></li>
+  <% end %>
+</ul>
+</div>
+
+<div id='footer'>
+<h6><a href="/"> Save Scores & End Game </a></h6>
 </div>

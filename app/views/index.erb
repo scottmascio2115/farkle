@@ -1,10 +1,33 @@
-<div class="container">
-  <h1>Welcome to Ruby Racer!</h1>
-
-<form action="/creategame" Method="POST">
-   Player 1:<input type="name" name="player1_name" placeholder="Player 1 Name">
-   Player 2:<input type="name" name="player2_name" placeholder="Player 2 Name">
-   <input type="submit" value="submit">
- </form>
+<div id="dialog" title="All Time Leaderboard">
+  <ul>
+  <% if @high_score.length >= 1 %>
+  <% @high_score.each do |player| %>
+  <li><%= player.name.capitalize %>: <%= player.score %></li><br>
+  <% end %>
+  <% end %>
+</ul>
+</div>
+<% if @high_score.length >= 1 %>
+<button id="opener">Leaderboard</button>
+<% end %>
+<div id="welcome" >
+  <h1>Welcome to Skizzle!</h1>
 
 </div>
+
+
+<div class="container">
+  <div id = "dice">
+  <img src="/1.png" alt="the roll"><img src="/2.png" alt="the roll"><img src="/3.png" alt="the roll"><img src="/4.png" alt="the roll"><img src="/5.png" alt="the roll"><img src="/6.png" alt="the roll">
+  </div>
+
+<h5><a id="lin" href="/oneplayer"> Play Alone </a></h5>
+<h5><a id="lin" href="/twoplayer"> Play with a Friend </a></h5>
+
+</div>
+<button id="opener2">Skizzle Rules</button>
+<div id="dialog2" title="Welcome to Skizzle">
+  <p>SKIZZLE is an arcade style dice game loosly based on the game <a href="http://en.wikipedia.org/wiki/Farkle">Farkle</a>. A player can play alone or with a friend. A player starts with 6 dice and after every throw has two options. Either risk it and throw the remaining dice not used in the combination, or preserve the score and alternate turns.When you risk it a player throws the remaining dice in hopes of getting Skizzling dice!</p> <p>The reward for Skizzling dice is the accumilation of the whole turns score, a 1000 point bonus and its still your turn! The advantage of risking it is a player has a higher reward but they also have a higher risk of being Skizzled! Being Skizzled is when a player throws the dice and none of the dice qualify for any of the combinations. When a player gets Skizzled there total score is reset to zero!</p><p><h6><a href="/odds"> Combinations / Scoring</a></h6></p>
+</div>
+
+

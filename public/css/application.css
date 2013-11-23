@@ -1,15 +1,1503 @@
-.racer_table td {
-  background-color: #ddd;
-  height: 20px;
-  width: 20px;
+
+@media (max-width: 1800px){
+.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-front.ui-draggable.ui-resizable {
+  width: 550px;
 }
 
-.racer_table tr {
-  border: 1px solid black;
-  margin: 10px;
+#sixdice img{
+  height:20px;
+  width:20px;
+  margin: 0;
+  margin-right: 10px;
+  padding:0;
 }
 
-.racer_table td.active {
-  background-color: #aaa;
+#sixdice li{
+ border-bottom-style: solid;
+ text-align: center;
+}
+
+#sixdice {
+  position: absolute;
+  left: 190px;
+  top: 470px;
   text-align: center;
+  background-color: #F8F8FF;
+  border-radius:25px;
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 20px;
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  color: red;
+  font-family: 'Orbitron', sans-serif;
+  font-weight:bold;
+}
+
+#fourdice img{
+  height:20px;
+  width:20px;
+  margin: 0;
+  margin-right: 10px;
+  padding:0;
+}
+
+#fourdice li{
+ border-bottom-style: solid;
+ text-align: center;
+}
+
+#fourdice {
+  position: absolute;
+  left: 190px;
+  top: 470px;
+  text-align: center;
+  background-color: #F8F8FF;
+  border-radius:25px;
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 20px;
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  color: red;
+  font-family: 'Orbitron', sans-serif;
+  font-weight:bold;
+}
+#threedice img{
+  height:20px;
+  width:20px;
+  margin: 0;
+  margin-right: 10px;
+  padding:0;
+}
+
+#threedice li{
+ border-bottom-style: solid;
+ text-align: center;
+}
+
+#threedice {
+  position: absolute;
+  left: 190px;
+  top: 470px;
+  text-align: center;
+  background-color: #F8F8FF;
+  border-radius:25px;
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 20px;
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  color: red;
+  font-family: 'Orbitron', sans-serif;
+  font-weight:bold;
+}
+#twodice img{
+  height:20px;
+  width:20px;
+  margin: 0;
+  margin-right: 10px;
+  padding:0;
+}
+
+#twodice li{
+ border-bottom-style: solid;
+ text-align: center;
+}
+
+#twodice {
+  position: absolute;
+  left: 190px;
+  top: 470px;
+  text-align: center;
+  background-color: #F8F8FF;
+  border-radius:25px;
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 20px;
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  color: red;
+  font-family: 'Orbitron', sans-serif;
+  font-weight:bold;
+}
+
+#onedice img{
+  height:20px;
+  width:20px;
+  margin: 0;
+  margin-right: 10px;
+  padding:0;
+}
+
+#onedice li{
+ border-bottom-style: solid;
+ text-align: center;
+}
+
+#onedice {
+  position: absolute;
+  left: 190px;
+  top: 470px;
+  text-align: center;
+  background-color: #F8F8FF;
+  border-radius:25px;
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 20px;
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  color: red;
+  font-family: 'Orbitron', sans-serif;
+  font-weight:bold;
+}
+
+#fivedice img{
+  height:20px;
+  width:20px;
+  margin: 0;
+  margin-right: 10px;
+  padding:0;
+}
+
+#fivedice li{
+ border-bottom-style: solid;
+ text-align: center;
+}
+
+#fivedice {
+  position: absolute;
+  left: 190px;
+  top: 470px;
+  text-align: center;
+  background-color: #F8F8FF;
+  border-radius:25px;
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 20px;
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  color: red;
+  font-family: 'Orbitron', sans-serif;
+  font-weight:bold;
+
+}
+
+#combinations{
+  width: 600px;
+  background-color: #F8F8FF;
+  border-radius:25px;
+  text-align: center;
+
+  padding: 20px;
+  margin-top: 20px;
+  margin-right: 200px;
+  margin-left: 200px;
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  color: red;
+  font-family: 'Orbitron', sans-serif;
+  font-weight:bold;
+}
+#risk{
+  width: 390px;
+  background-color: #F8F8FF;
+  right: 10px;
+  border-radius:25px;
+  text-align: center;
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  right: 150px;
+  position:absolute;
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  color: red;
+  font-family: 'Orbitron', sans-serif;
+  font-weight:bold;
+}
+
+.ui-dialog-title{
+  color: red;
+  text-align: center;
+}
+
+#skizz{
+  text-align: center;
+  color: red;
+}
+
+table{
+  margin-left:10px;
+
+}
+
+.leaderboard{
+  color:red;
+  font-family: 'Orbitron', sans-serif;
+  border-radius:25px;
+  background-color: #F8F8FF;
+
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  padding: 10px;
+  color: red;
+  top: 10px;
+  left: 10px;
+  position: absolute;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#options{
+  float:left;
+ background-color: #F8F8FF;
+  border-radius:25px;
+  margin-top: 10px;
+  padding: 10px;
+  margin-right: 150px;
+  width:300px;
+  margin-left: 190px;
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  color: black;
+}
+
+#dialog2{
+  color: red;
+  width: 100px;
+  /*font-family: 'Orbitron', sans-serif;*/
+  font-family: 'Open Sans', sans-serif;
+}
+
+#welcome {
+  /*font-family: 'Permanent Marker', cursive;*/
+  font-family: 'Orbitron', sans-serif;
+  /*font-family: 'Englebert', sans-serif;*/
+  text-align: center;
+  color: red;
+  font-size: 30px;
+}
+
+img {
+    background-color: #F0F8FF ;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 5px;
+    border-radius:10px;
+
+}
+
+#button{
+  color:red;
+  border-radius:25px;
+  background-color: #F8F8FF;
+}
+
+
+.container {
+  background-color: #F8F8FF;
+  border-radius:25px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+  margin-right: 150px;
+  margin-left: 150px;
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  color: red;
+  font-family: 'Orbitron', sans-serif;
+  font-weight:bold;
+}
+
+#intro {
+  border: 1px solid #F8F8FF;
+  background-color: #F8F8FF;
+  text-align: right;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  padding-right: 10px;
+  color: red;
+  padding-top: 10px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#intro h1{
+  width: 30px;
+  text-align: left;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-left: 10px;
+  float:left;
+  font-family: 'Orbitron', sans-serif;
+
+}
+
+#footer {
+  position:absolute;
+  bottom: 0;
+  right: 0;
+  padding-right: 10px;
+}
+
+#zerod{
+  font-family: 'Orbitron', sans-serif;
+  color: red;
+}
+
+#skizzling{
+  background-color: #F8F8FF;
+  border-radius:25px;
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px;
+  margin-right: 150px;
+  margin-left: 150px;
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  color: red;
+  font-family: 'Orbitron', sans-serif;
+  font-weight:bold;
+
+}
+
+#skizzlingdice {
+  font-family: 'Orbitron', sans-serif;
+  color:red;
+  text-align: center;
+}
+
+body {
+ background-color: #dee6ec;
+font-family: 'Orbitron', sans-serif;
+color: red;
+
+}
+
+#opener{
+  border-radius:25px;
+  background-color: #F8F8FF;
+  margin: 55px;
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  padding: 10px;
+  color: red;
+  top: 0;
+  left: 95px;
+  position: absolute;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#opener2{
+  border-radius:25px;
+  background-color: #F8F8FF;
+  margin: 55px;
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  padding: 10px;
+  color: red;
+  top: 0;
+  right: 95px;
+  position: absolute;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#dialog{
+  color: black;
+  background-color: #F8F8FF;
+  font-family: 'Orbitron', sans-serif;
+  color:red;
+}
+
+
+li { list-style: none;
+}
+
+a {
+  color: red;
+  font-size: 20px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#die {
+  height: 85px;
+  margin-top: 20px;
+}
+
+
+#dice {
+  height: 85px;
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+
+.ui-dialog .ui-dialog-titlebar{
+  font-family: 'Orbitron', sans-serif;
+}
+}
+
+@media (max-width: 800px){
+.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-front.ui-draggable.ui-resizable {
+  width: 550px;
+}
+
+#input{
+  top:500px;
+  position: absolute;
+}
+
+.ui-dialog-title{
+  color: red;
+  text-align: center;
+}
+
+#dialog2{
+  color: red;
+  width: 100px;
+  /*font-family: 'Orbitron', sans-serif;*/
+  font-family: 'Open Sans', sans-serif;
+}
+
+#welcome {
+  text-align: center;
+  color: red;
+  font-size: 30px;
+  padding-top:50px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+img {
+    background-color: #F0F8FF ;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 5px;
+    border-radius:10px;
+
+}
+#combinations{
+  position: absolute;
+  right:10px;
+  top: 520px;
+  text-align: center;
+  background-color: #F8F8FF;
+  border-radius:25px;
+  width: 600px;
+  margin-right: 10px;
+  margin-top: 20px;
+  padding: 20px;
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  color: red;
+  font-family: 'Orbitron', sans-serif;
+  font-weight:bold;
+}
+
+#skizzling{
+  background-color: #F8F8FF;
+  border-radius:25px;
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px;
+  margin-right: 150px;
+  margin-left: 150px;
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  color: red;
+  font-family: 'Orbitron', sans-serif;
+  font-weight:bold;
+
+}
+#sixdice {
+  position: absolute;
+  right:10px;
+  top: 1020px;
+  text-align: center;
+  background-color: #F8F8FF;
+  border-radius:25px;
+  width: 600px;
+  margin-right: 10px;
+  margin-top: 20px;
+  padding: 20px;
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  color: red;
+  font-family: 'Orbitron', sans-serif;
+  font-weight:bold;
+}
+#fivedice {
+  position: absolute;
+  right:10px;
+  top: 1020px;
+  text-align: center;
+  background-color: #F8F8FF;
+  border-radius:25px;
+  width: 600px;
+  margin-right: 10px;
+  margin-top: 20px;
+  padding: 20px;
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  color: red;
+  font-family: 'Orbitron', sans-serif;
+  font-weight:bold;
+}
+#fourdice {
+  position: absolute;
+  right:10px;
+  top: 1020px;
+  text-align: center;
+  background-color: #F8F8FF;
+  border-radius:25px;
+  width: 600px;
+  margin-right: 10px;
+  margin-top: 20px;
+  padding: 20px;
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  color: red;
+  font-family: 'Orbitron', sans-serif;
+  font-weight:bold;
+}
+#threedice {
+  position: absolute;
+  right:10px;
+  top: 1020px;
+  text-align: center;
+  background-color: #F8F8FF;
+  border-radius:25px;
+  width: 600px;
+  margin-right: 10px;
+  margin-top: 20px;
+  padding: 20px;
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  color: red;
+  font-family: 'Orbitron', sans-serif;
+  font-weight:bold;
+}
+#twodice {
+  position: absolute;
+  right:10px;
+  top: 1020px;
+  text-align: center;
+  background-color: #F8F8FF;
+  border-radius:25px;
+  width: 600px;
+  margin-right: 10px;
+  margin-top: 20px;
+  padding: 20px;
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  color: red;
+  font-family: 'Orbitron', sans-serif;
+  font-weight:bold;
+}
+#onedice {
+  position: absolute;
+  right:10px;
+  top: 1020px;
+  text-align: center;
+  background-color: #F8F8FF;
+  border-radius:25px;
+  width: 600px;
+  margin-right: 10px;
+  margin-top: 20px;
+  padding: 20px;
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  color: red;
+  font-family: 'Orbitron', sans-serif;
+  font-weight:bold;
+}
+#risk{
+  top: 825px;
+  width: 390px;
+  background-color: #F8F8FF;
+  right: 10px;
+  border-radius:25px;
+  text-align: center;
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  right: 150px;
+  position:absolute;
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  color: red;
+  font-family: 'Orbitron', sans-serif;
+  font-weight:bold;
+}
+
+.leaderboard{
+  color:red;
+  font-family: 'Orbitron', sans-serif;
+  border-radius:25px;
+  background-color: #F8F8FF;
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  padding: 10px;
+  color: red;
+  top:192px;
+  position: absolute;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#skizzlingdice {
+  font-family: 'Orbitron', sans-serif;
+  color:red;
+}
+
+#button{
+  color:red;
+  border-radius:25px;
+  background-color: #F8F8FF;
+}
+
+
+.container {
+  background-color: #F8F8FF;
+  height: 400px;
+  border-radius:25px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+  margin-right: 150px;
+  margin-left: 150px;
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  color: red;
+  font-weight:bold;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#intro {
+  border: 1px solid #F8F8FF;
+  background-color: #F8F8FF;
+  text-align: right;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  padding-right: 10px;
+  color: red;
+  padding-top: 10px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#intro h1{
+  width: 30px;
+  text-align: left;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-left: 10px;
+  float:left;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#footer {
+  position:absolute;
+  bottom: 0;
+  right: 0;
+  padding-right: 10px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+body {
+ background-color: #dee6ec;
+ font-family: 'Orbitron', sans-serif;
+
+}
+
+#opener{
+  border-radius:25px;
+  background-color: #F8F8FF;
+  margin: 10px 10px;
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  padding: 10px;
+  color: red;
+  top: 0;
+  position: absolute;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#opener2{
+  border-radius:25px;
+  background-color: #F8F8FF;
+  margin: 10px;
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  padding: 10px;
+  color: red;
+  top: 0;
+  right: 95px;
+  position: absolute;
+  font-family: 'Orbitron', sans-serif;
+}
+
+
+#lin{
+  color:red;
+  top:150px;
+  position:relative;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#dialog{
+  color: black;
+  background-color: #F8F8FF;
+  font-family: 'Orbitron', sans-serif;
+  color:red;
+}
+
+
+li { list-style: none;
+}
+
+a {
+  color: red;
+  font-size: 20px;
+}
+
+#die {
+  height: 85px;
+  margin-top: 20px;
+}
+
+
+#dice {
+  height: 85px;
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+.ui-dialog .ui-dialog-titlebar{
+  font-family: 'Orbitron', sans-serif;
+}
+}
+
+
+@media (max-width: 1200px){
+.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-front.ui-draggable.ui-resizable {
+  width: 550px;
+}
+
+#input{
+  top:500px;
+  position: absolute;
+}
+
+#zerod{
+  font-family: 'Orbitron', sans-serif;
+}
+
+.ui-dialog-title{
+  color: red;
+  text-align: center;
+}
+
+#skizzling{
+  background-color: #F8F8FF;
+  border-radius:25px;
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px;
+  margin-right: 150px;
+  margin-left: 150px;
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  color: red;
+  font-family: 'Orbitron', sans-serif;
+  font-weight:bold;
+
+}
+
+#combinations{
+  position: absolute;
+  right:10px;
+  top: 520px;
+  text-align: center;
+  background-color: #F8F8FF;
+  border-radius:25px;
+  width: 600px;
+  margin-right: 10px;
+  margin-top: 20px;
+  padding: 20px;
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  color: red;
+  font-family: 'Orbitron', sans-serif;
+  font-weight:bold;
+}
+#sixdice {
+  position: absolute;
+  right:10px;
+  top: 1020px;
+  text-align: center;
+  background-color: #F8F8FF;
+  border-radius:25px;
+  width: 600px;
+  margin-right: 10px;
+  margin-top: 20px;
+  padding: 20px;
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  color: red;
+  font-family: 'Orbitron', sans-serif;
+  font-weight:bold;
+}
+#fivedice {
+  position: absolute;
+  right:10px;
+  top: 1020px;
+  text-align: center;
+  background-color: #F8F8FF;
+  border-radius:25px;
+  width: 600px;
+  margin-right: 10px;
+  margin-top: 20px;
+  padding: 20px;
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  color: red;
+  font-family: 'Orbitron', sans-serif;
+  font-weight:bold;
+}
+#fourdice {
+  position: absolute;
+  right:10px;
+  top: 1020px;
+  text-align: center;
+  background-color: #F8F8FF;
+  border-radius:25px;
+  width: 600px;
+  margin-right: 10px;
+  margin-top: 20px;
+  padding: 20px;
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  color: red;
+  font-family: 'Orbitron', sans-serif;
+  font-weight:bold;
+}
+#threedice {
+  position: absolute;
+  right:10px;
+  top: 1020px;
+  text-align: center;
+  background-color: #F8F8FF;
+  border-radius:25px;
+  width: 600px;
+  margin-right: 10px;
+  margin-top: 20px;
+  padding: 20px;
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  color: red;
+  font-family: 'Orbitron', sans-serif;
+  font-weight:bold;
+}
+#twodice {
+  position: absolute;
+  right:10px;
+  top: 1020px;
+  text-align: center;
+  background-color: #F8F8FF;
+  border-radius:25px;
+  width: 600px;
+  margin-right: 10px;
+  margin-top: 20px;
+  padding: 20px;
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  color: red;
+  font-family: 'Orbitron', sans-serif;
+  font-weight:bold;
+}
+#onedice {
+  position: absolute;
+  right:10px;
+  top: 1020px;
+  text-align: center;
+  background-color: #F8F8FF;
+  border-radius:25px;
+  width: 600px;
+  margin-right: 10px;
+  margin-top: 20px;
+  padding: 20px;
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  color: red;
+  font-family: 'Orbitron', sans-serif;
+  font-weight:bold;
+}
+
+#risk{
+  top: 825px;
+  width: 390px;
+  background-color: #F8F8FF;
+  right: 10px;
+  border-radius:25px;
+  text-align: center;
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  right: 150px;
+  position:absolute;
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  color: red;
+  font-family: 'Orbitron', sans-serif;
+  font-weight:bold;
+}
+
+.leaderboard{
+  color:red;
+  font-family: 'Orbitron', sans-serif;
+  border-radius:25px;
+  background-color: #F8F8FF;
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  padding: 10px;
+  color: red;
+  top:192px;
+  position: absolute;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#skizzlingdice {
+  font-family: 'Orbitron', sans-serif;
+  color:red;
+}
+
+#dialog2{
+  color: red;
+  width: 100px;
+  /*font-family: 'Orbitron', sans-serif;*/
+  font-family: 'Open Sans', sans-serif;
+}
+
+#welcome {
+  text-align: center;
+  color: red;
+  font-size: 30px;
+  padding-top:50px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+img {
+    background-color: #F0F8FF ;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 5px;
+    border-radius:10px;
+
+}
+
+#button{
+  color:red;
+  border-radius:25px;
+  background-color: #F8F8FF;
+}
+
+
+.container {
+  background-color: #F8F8FF;
+  height: 400px;
+  border-radius:25px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+  margin-right: 150px;
+  margin-left: 150px;
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  color: red;
+  font-family: 'Orbitron', sans-serif;
+  font-weight:bold;
+}
+
+#intro {
+  border: 1px solid #F8F8FF;
+  background-color: #F8F8FF;
+  text-align: right;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  padding-right: 10px;
+  color: red;
+  padding-top: 10px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#intro h1{
+  width: 30px;
+  text-align: left;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-left: 10px;
+  float:left;
+  font-family: 'Orbitron', sans-serif;
+
+}
+
+#footer {
+  position:absolute;
+  bottom: 0;
+  right: 0;
+  padding-right: 10px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+body {
+ background-color: #dee6ec;
+ font-family: 'Orbitron', sans-serif;
+
+}
+
+#opener{
+  border-radius:25px;
+  background-color: #F8F8FF;
+  margin: 10px 10px;
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  padding: 10px;
+  color: red;
+  top: 0;
+  position: absolute;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#opener2{
+  border-radius:25px;
+  background-color: #F8F8FF;
+  margin: 10px;
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  padding: 10px;
+  color: red;
+  top: 0;
+  right: 95px;
+  position: absolute;
+  font-family: 'Orbitron', sans-serif;
+}
+
+
+#lin{
+  color:red;
+  top:150px;
+  position:relative;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#dialog{
+  color: black;
+  background-color: #F8F8FF;
+  font-family: 'Orbitron', sans-serif;
+  color:red;
+}
+
+
+li { list-style: none;
+}
+
+a {
+  color: red;
+  font-size: 20px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#die {
+  height: 85px;
+  margin-top: 20px;
+}
+
+
+#dice {
+  height: 85px;
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+}
+
+@media (max-width: 900px){
+.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-front.ui-draggable.ui-resizable {
+  width: 550px;
+}
+
+#input{
+  top:500px;
+  position: absolute;
+}
+
+#zerod{
+  font-family: 'Orbitron', sans-serif;
+}
+
+.ui-dialog-title{
+  color: red;
+  text-align: center;
+}
+
+#dialog2{
+  color: red;
+  width: 100px;
+  /*font-family: 'Orbitron', sans-serif;*/
+  font-family: 'Open Sans', sans-serif;
+}
+
+#welcome {
+  text-align: center;
+  color: red;
+  font-size: 30px;
+  padding-top:50px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+img {
+    background-color: #F0F8FF ;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 5px;
+    border-radius:10px;
+
+}
+
+#button{
+  color:red;
+  border-radius:25px;
+  background-color: #F8F8FF;
+}
+
+#skizzling{
+  background-color: #F8F8FF;
+  border-radius:25px;
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px;
+  margin-right: 150px;
+  margin-left: 150px;
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  color: red;
+  font-family: 'Orbitron', sans-serif;
+  font-weight:bold;
+
+}
+
+#skizzlingdice {
+  font-family: 'Orbitron', sans-serif;
+  color:red;
+}
+
+.container {
+  background-color: #F8F8FF;
+  height: 400px;
+  border-radius:25px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+  margin-right: 150px;
+  margin-left: 150px;
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  color: red;
+  font-family: 'Orbitron', sans-serif;
+  font-weight:bold;
+}
+
+#intro {
+  border: 1px solid #F8F8FF;
+  background-color: #F8F8FF;
+  text-align: right;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  padding-right: 10px;
+  color: red;
+  padding-top: 10px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#intro h1{
+  width: 30px;
+  text-align: left;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-left: 10px;
+  float:left;
+`font-family: 'Orbitron', sans-serif;
+}
+
+#footer {
+  position:absolute;
+  bottom: 0;
+  right: 0;
+  padding-right: 10px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+body {
+ background-color: #dee6ec;
+font-family: 'Orbitron', sans-serif;
+
+}
+
+#opener{
+  border-radius:25px;
+  background-color: #F8F8FF;
+  margin: 10px 10px;
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  padding: 10px;
+  color: red;
+  top: 0;
+  position: absolute;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#opener2{
+  border-radius:25px;
+  background-color: #F8F8FF;
+  margin: 10px;
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  padding: 10px;
+  color: red;
+  top: 0;
+  right: 95px;
+  position: absolute;
+  font-family: 'Orbitron', sans-serif;
+}
+
+
+#lin{
+  color:red;
+  top:250px;
+  position:relative;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#dialog{
+  color: black;
+  background-color: #F8F8FF;
+  font-family: 'Orbitron', sans-serif;
+  color:red;
+}
+
+
+li { list-style: none;
+}
+
+a {
+  color: red;
+  font-size: 20px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#die {
+  height: 85px;
+  margin-top: 20px;
+}
+
+
+#dice {
+  height: 85px;
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+.ui-dialog .ui-dialog-titlebar{
+  font-family: 'Orbitron', sans-serif;
+}
+}
+
+@media (max-width: 650px){
+.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-front.ui-draggable.ui-resizable {
+  width: 550px;
+}
+
+#zerod{
+  font-family: 'Orbitron', sans-serif;
+}
+
+#input{
+  top:650px;
+  position: absolute;
+}
+
+.ui-dialog-title{
+  color: red;
+  text-align: center;
+}
+
+#dialog2{
+  color: red;
+  width: 100px;
+  /*font-family: 'Orbitron', sans-serif;*/
+  font-family: 'Open Sans', sans-serif;
+}
+
+#welcome {
+  text-align: center;
+  color: red;
+  font-size: 30px;
+  padding-top:50px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+img {
+    background-color: #F0F8FF ;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 5px;
+    border-radius:10px;
+
+}
+
+#button{
+  color:red;
+  border-radius:25px;
+  background-color: #F8F8FF;
+}
+
+#skizzling{
+  background-color: #F8F8FF;
+  border-radius:25px;
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px;
+  margin-right: 150px;
+  margin-left: 150px;
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  color: red;
+  font-family: 'Orbitron', sans-serif;
+  font-weight:bold;
+
+}
+
+#skizzlingdice {
+  font-family: 'Orbitron', sans-serif;
+  color:red;
+}
+
+
+.container {
+  background-color: #F8F8FF;
+  height: 400px;
+  border-radius:25px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+  margin-right: 150px;
+  margin-left: 150px;
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  color: red;
+  font-family: 'Orbitron', sans-serif;
+  font-weight:bold;
+}
+
+#intro {
+  border: 1px solid #F8F8FF;
+  background-color: #F8F8FF;
+  text-align: right;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  padding-right: 10px;
+  color: red;
+  padding-top: 10px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#intro h1{
+  width: 30px;
+  text-align: left;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-left: 10px;
+  float:left;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#footer {
+  position:absolute;
+  bottom: 0;
+  right: 0;
+  padding-right: 10px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+body {
+ background-color: #dee6ec;
+ font-family: 'Orbitron', sans-serif;
+
+}
+
+#opener{
+  border-radius:25px;
+  background-color: #F8F8FF;
+  margin: 10px 10px;
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  padding: 10px;
+  color: red;
+  top: 0;
+  position: absolute;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#opener2{
+  border-radius:25px;
+  background-color: #F8F8FF;
+  margin: 10px;
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  padding: 10px;
+  color: red;
+  top: 0;
+  right: 95px;
+  position: absolute;
+  font-family: 'Orbitron', sans-serif;
+}
+
+
+#lin{
+  color:red;
+  top:250px;
+  position:relative;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#dialog{
+  color: black;
+  background-color: #F8F8FF;
+  font-family: 'Orbitron', sans-serif;
+  color:red;
+}
+
+
+li { list-style: none;
+}
+
+a {
+  color: red;
+  font-size: 20px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#die {
+  height: 85px;
+  margin-top: 20px;
+}
+
+
+#dice {
+  height: 85px;
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+.ui-dialog .ui-dialog-titlebar{
+  font-family: 'Orbitron', sans-serif;
+}
 }

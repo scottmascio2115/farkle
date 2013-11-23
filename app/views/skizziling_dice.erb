@@ -1,0 +1,13 @@
+
+<div id="skizzling">
+<h1>You rolled <%= @message %> You've got Skizzling Dice!</h1>
+
+<h1> 1000 point bonus! </h1>
+
+<h1>You'r total score now is <%= @player.score %></h1>
+<h4><a href="/game/playertwo/<%= @game.id %>/roll/<%= @player.id %>"> Plus you get another six dice!! </a></h4>
+</div>
+
+<div id="skizzlingdice" title="HOT HAND!">
+  <h1> <img src="/skizzling.png" height="200" width="200"><br>You are SKIZZLING!! </h1>
+</div>

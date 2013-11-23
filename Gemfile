@@ -9,6 +9,8 @@ gem 'sinatra-contrib'
 
 # Use Thin for our web server
 gem 'thin'
+gem 'protected_attributes'
+gem 'devise', '3.0.0.rc'
 
 gem 'activesupport'
 gem 'activerecord'
@@ -18,6 +20,7 @@ gem 'rake'
 gem 'shotgun'
 
 group :test do
-  gem 'faker'
-  gem 'rspec'
+  gem "rspec"
+  gem "capybara"
+  gem 'selenium-webdriver'
 end

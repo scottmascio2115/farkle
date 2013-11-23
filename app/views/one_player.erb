@@ -1,0 +1,31 @@
+<div id="welcome" >
+  <h1> One Player Skizzle!</h1>
+
+</div>
+
+<div class="container">
+  <div id = "dice">
+  <img src="/1.png" alt="the roll"><img src="/2.png" alt="the roll"><img src="/3.png" alt="the roll"><img src="/4.png" alt="the roll"><img src="/5.png" alt="the roll"><img src="/6.png" alt="the roll">
+  </div>
+<div id="input">
+<form action="/creategame/playersone" Method="POST">
+   Player:  <input type="name" name="player1_name" placeholder="Player Name">
+   <input id="button" type="submit" value="Let's Play">
+ </form>
+</div>
+</div>
+
+
+<div id="dialog" title="All Time Leaderboard">
+  <ul>
+  <% if @high_score.length >= 1 %>
+  <% @high_score.each do |player| %>
+  <li><%= player.name.capitalize %>: <%= player.score %></li><br>
+  <% end %>
+  <% end %>
+</ul>
+</div>
+<% if @high_score.length >= 1 %>
+<button id="opener">Leaderboard</button>
+<% end %>
+

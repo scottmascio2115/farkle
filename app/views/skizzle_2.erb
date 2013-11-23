@@ -1,0 +1,14 @@
+<div id="skizz">
+<p> I smell a skizzle! <%= @player.name.capitalize %> you just skizzled! <%= @message %> </p>
+</div>
+<ul>
+  <div class="container">
+  <li><img src="/<%= @roll1 %>.png" alt="the roll"><img src="/<%= @roll2 %>.png" alt="the roll"></li>
+  </div>
+</ul>
+<div id="skizz">
+<h4><a href="/game/playerstwo/<%= @game.id %>/<%=@game.players.first.id %>/<%= @game.players.last.id %>"> Say it: I got Skizzled!! </a></h4>
+</div>
+<div id="zerod" title="SKIZZLED">
+  <h1> <img src="/bart.png" height="200" width="200"><br>You just got SKIZZLED!!!! </h1>
+</div>
