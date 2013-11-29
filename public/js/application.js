@@ -157,5 +157,102 @@ $(document).ready(function() {
   $('#onedice').slideToggle(700);
 
     });
+
+  $("#oddssixdice").hide();
+  $("#oddsfivedice").hide();
+  $("#oddstwodice").hide();
+  $("#oddsthreedice").hide();
+  $("#oddsfourdice").hide();
+  $("#sixer").on('click', function(event){
+    event.preventDefault();
+  $("#oddsfivedice").hide();
+  $("#oddsfourdice").hide();
+  $("#oddsonedice").hide();
+  $("#oddstwodice").hide();
+  $("#oddsthreedice").hide();
+  $('#oddssixdice').slideToggle(700);
+
+    });
+
+  $("#oddssixdice").hide();
+  $("#oddsfivedice").hide();
+  $("#oddstwodice").hide();
+  $("#oddsthreedice").hide();
+  $("#oddsfourdice").hide();
+  $("#fiver").on('click', function(event){
+    event.preventDefault();
+  $("#oddssixdice").hide();
+  $("#oddsfourdice").hide();
+  $("#oddstwodice").hide();
+  $("#oddsonedice").hide();
+  $("#oddsthreedice").hide();
+  $('#oddsfivedice').slideToggle(700);
+
+    });
+  $("#oddssixdice").hide();
+  $("#oddsfivedice").hide();
+  $("#oddsthreedice").hide();
+  $("#oddsonedice").hide();
+  $("#oddstwodice").hide();
+  $("#oddsfourdice").hide();
+  $("#fourer").on('click', function(event){
+    event.preventDefault();
+  $("#oddssixdice").hide();
+  $("#oddsthreedice").hide();
+  $('#oddsfivedice').hide();
+  $("#oddsonedice").hide();
+  $("#oddstwodice").hide();
+  $('#oddsfourdice').slideToggle(700);
+
+    });
+  $("#oddssixdice").hide();
+  $("#oddsfivedice").hide();
+  $("#oddsfourdice").hide();
+  $("#oddstwodice").hide();
+  $("#oddsonedice").hide();
+  $("#oddsthreedice").hide();
+  $("#threeer").on('click', function(event){
+    event.preventDefault();
+  $("#oddssixdice").hide();
+  $('#oddsfivedice').hide();
+  $('#oddsfourdice').hide();
+  $("#oddsonedice").hide();
+  $("#oddstwodice").hide();
+  $('#oddsthreedice').slideToggle(700);
+
+    });
+
+  $("#oddssixdice").hide();
+  $("#oddsfivedice").hide();
+  $("#oddsfourdice").hide();
+  $("#oddsthreedice").hide();
+  $("#oddsonedice").hide();
+  $("#oddstwodice").hide();
+  $("#twoer").on('click', function(event){
+    event.preventDefault();
+  $("#oddssixdice").hide();
+  $('#oddsfivedice').hide();
+  $('#oddsfourdice').hide();
+  $('#oddsthreedice').hide();
+  $("#oddsonedice").hide();
+  $('#oddstwodice').slideToggle(700);
+
+    });
+  $("#oddssixdice").hide();
+  $("#oddsfivedice").hide();
+  $("#oddsfourdice").hide();
+  $("#oddsthreedice").hide();
+  $("#oddstwodice").hide();
+  $("#oddsonedice").hide();
+  $("#oneer").on('click', function(event){
+    event.preventDefault();
+  $("#oddssixdice").hide();
+  $('#oddsfivedice').hide();
+  $('#oddsfourdice').hide();
+  $('#oddsthreedice').hide();
+  $('#oddstwodice').hide();
+  $('#oddsonedice').slideToggle(700);
+
+    });
    });
 

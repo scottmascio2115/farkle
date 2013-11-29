@@ -189,6 +189,191 @@
 
 }
 
+#oddssixdice img{
+  height:20px;
+  width:20px;
+  margin: 0;
+  margin-right: 10px;
+  padding:0;
+}
+
+#oddssixdice li{
+ border-bottom-style: solid;
+ text-align: center;
+}
+
+#oddssixdice {
+  position: absolute;
+  left: 10px;
+  top: 470px;
+  text-align: center;
+  background-color: #F8F8FF;
+  border-radius:25px;
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 20px;
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  color: red;
+  font-family: 'Orbitron', sans-serif;
+  font-weight:bold;
+}
+
+#oddsfourdice img{
+  height:20px;
+  width:20px;
+  margin: 0;
+  margin-right: 10px;
+  padding:0;
+}
+
+#oddsfourdice li{
+ border-bottom-style: solid;
+ text-align: center;
+}
+
+#oddsfourdice {
+  position: absolute;
+  left: 10px;
+  top: 470px;
+  text-align: center;
+  background-color: #F8F8FF;
+  border-radius:25px;
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 20px;
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  color: red;
+  font-family: 'Orbitron', sans-serif;
+  font-weight:bold;
+}
+#oddsthreedice img{
+  height:20px;
+  width:20px;
+  margin: 0;
+  margin-right: 10px;
+  padding:0;
+}
+
+#oddsthreedice li{
+ border-bottom-style: solid;
+ text-align: center;
+}
+
+#oddsthreedice {
+  position: absolute;
+  left: 10px;
+  top: 470px;
+  text-align: center;
+  background-color: #F8F8FF;
+  border-radius:25px;
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 20px;
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  color: red;
+  font-family: 'Orbitron', sans-serif;
+  font-weight:bold;
+}
+#oddstwodice img{
+  height:20px;
+  width:20px;
+  margin: 0;
+  margin-right: 10px;
+  padding:0;
+}
+
+#oddstwodice li{
+ border-bottom-style: solid;
+ text-align: center;
+}
+
+#oddstwodice {
+  position: absolute;
+  left: 10px;
+  top: 470px;
+  text-align: center;
+  background-color: #F8F8FF;
+  border-radius:25px;
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 20px;
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  color: red;
+  font-family: 'Orbitron', sans-serif;
+  font-weight:bold;
+}
+
+#oddsonedice img{
+  height:20px;
+  width:20px;
+  margin: 0;
+  margin-right: 10px;
+  padding:0;
+}
+
+#oddsonedice li{
+ border-bottom-style: solid;
+ text-align: center;
+}
+
+#oddsonedice {
+  position: absolute;
+  left: 10px;
+  top: 470px;
+  text-align: center;
+  background-color: #F8F8FF;
+  border-radius:25px;
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 20px;
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  color: red;
+  font-family: 'Orbitron', sans-serif;
+  font-weight:bold;
+}
+
+#oddsfivedice img{
+  height:20px;
+  width:20px;
+  margin: 0;
+  margin-right: 10px;
+  padding:0;
+}
+
+#oddsfivedice li{
+ border-bottom-style: solid;
+ text-align: center;
+}
+
+#oddsfivedice {
+  position: absolute;
+  left: 10px;
+  top: 470px;
+  text-align: center;
+  background-color: #F8F8FF;
+  border-radius:25px;
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 20px;
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  color: red;
+  font-family: 'Orbitron', sans-serif;
+  font-weight:bold;
+
+}
+
 #combinations{
   width: 600px;
   background-color: #F8F8FF;
@@ -199,6 +384,23 @@
   margin-top: 20px;
   margin-right: 200px;
   margin-left: 200px;
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
+  color: red;
+  font-family: 'Orbitron', sans-serif;
+  font-weight:bold;
+}
+
+#oddscombinations{
+  width: 600px;
+  background-color: #F8F8FF;
+  border-radius:25px;
+  text-align: center;
+
+  padding: 20px;
+  margin-top: 20px;
+  position: absolute;
+  left: 10px;
   -webkit-box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
   box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 5);
   color: red;
