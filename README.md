@@ -1,4 +1,4 @@
-farkle
+Skizzle
 ======
 
 An arcade style dice game play alone or with a friend
