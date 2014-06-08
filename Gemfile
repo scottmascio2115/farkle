@@ -19,11 +19,10 @@ gem 'rake'
 
 gem 'shotgun'
 
+gem 'newrelic_rpm'
+
 group :test do
   gem "rspec"
   gem "capybara"
   gem 'selenium-webdriver'
 end
-
-
-ruby "1.9.3"
